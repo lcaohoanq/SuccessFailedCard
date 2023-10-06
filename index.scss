@@ -1,0 +1,98 @@
+@import "reset_css";
+@import "variables";
+
+@mixin centerByFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+  @include centerByFlex();
+  min-height: 100vh;
+
+  .card-carousel {
+    margin: 3rem 8rem;
+    display: flex;
+
+    .card-block {
+      width: 486px;
+      height: 592px;
+      margin: 3px 47px;
+      border-radius: $border-radius;
+      box-shadow: $shadow-card;
+
+      &:hover {
+        box-shadow: $shadow-card-hover;
+        transition: $transition-time;
+      }
+
+      .card__success {
+        .card_image {
+          margin: 0 auto;
+          margin-top: 3rem;
+          width: 215px;
+          height: 179px;
+        }
+        .card_status {
+          margin-top: 6rem;
+          p.status {
+            font-size: 40px;
+            color: rgb(51, 51, 51);
+            font-weight: bolder;
+          }
+        }
+
+        .card_message {
+          margin-top: 4rem;
+          p.message {
+            font-size: 22px;
+            color: rgb(123, 121, 121);
+            font-weight: bolder;
+          }
+        }
+        .card_button {
+          margin-top: 7rem;
+          @include centerByFlex();
+
+          a.success {
+            display: block;
+            background-color: $success-color;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            width: 306px;
+            height: 77px;
+            border-radius: $border-radius;
+
+            @include centerByFlex();
+
+            &:hover {
+              background-color: $success-color-hover;
+              transition: $transition-time;
+            }
+          }
+          a.failed {
+            display: block;
+            background-color: $failed-color;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            width: 306px;
+            height: 77px;
+            border-radius: $border-radius;
+
+            @include centerByFlex();
+
+            &:hover {
+              background-color: $failed-color-hover;
+              transition: $transition-time;
+            }
+          }
+        }
+      }
+    }
+  }
+}

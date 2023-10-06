@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container .card-carousel {
+  margin: 3rem 8rem;
+  display: flex;
+}
+.container .card-carousel .card-block {
+  width: 486px;
+  height: 592px;
+  margin: 3px 47px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container .card-carousel .card-block:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.5s;
+}
+.container .card-carousel .card-block .card__success .card_image {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 215px;
+  height: 179px;
+}
+.container .card-carousel .card-block .card__success .card_status {
+  margin-top: 6rem;
+}
+.container .card-carousel .card-block .card__success .card_status p.status {
+  font-size: 40px;
+  color: rgb(51, 51, 51);
+  font-weight: bolder;
+}
+.container .card-carousel .card-block .card__success .card_message {
+  margin-top: 4rem;
+}
+.container .card-carousel .card-block .card__success .card_message p.message {
+  font-size: 22px;
+  color: rgb(123, 121, 121);
+  font-weight: bolder;
+}
+.container .card-carousel .card-block .card__success .card_button {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-carousel .card-block .card__success .card_button a.success {
+  display: block;
+  background-color: #49d790;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  width: 306px;
+  height: 77px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-carousel .card-block .card__success .card_button a.success:hover {
+  background-color: #4fe79b;
+  transition: 0.5s;
+}
+.container .card-carousel .card-block .card__success .card_button a.failed {
+  display: block;
+  background-color: #ff7285;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  width: 306px;
+  height: 77px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-carousel .card-block .card__success .card_button a.failed:hover {
+  background-color: #ff8595;
+  transition: 0.5s;
+}/*# sourceMappingURL=index.css.map */
